@@ -1,0 +1,52 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    font-family: Lato, "Lucida Console", Monaco, monospace;
+}
+
+.landing-container {
+    background-color: rgba(0,0,0,0.2);
+    position:absolute;
+    text-align: center;
+    width: 100vw; height: 100vh;
+    font-size: 2vw;
+    color: white;
+    z-index: 2;
+}
+
+.text {
+    width: 60vw;
+    height: auto;
+    display: inline-block;
+    margin: 38vh 20vw;
+    z-index: 3;
+}
+
+#down-arrow-wrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index:1;
+    text-align: center;
+    line-height: 100vh;
+    /*border: 1px solid red;*/
+    font-size: 2vw;
+    color: white;
+    pointer-events:none;
+}
+#down-arrow {
+    /*border: solid 1px blue;*/
+    width: 8vw;
+    display: inline-block;
+    margin: 92vh 46vw 5vh 46vw;
+    z-index:9000;
+    pointer-events: all;
+    color: white;
+    opacity: 0.5;
+}
+
+#down-arrow:hover {
+  cursor: pointer;
+  cursor: hand;
+}
