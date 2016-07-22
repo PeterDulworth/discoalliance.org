@@ -1,1 +1,1 @@
-$('.carousel').carousel({ interval: 7000 })
+$('.carousel').carousel({ interval: 5000 })
