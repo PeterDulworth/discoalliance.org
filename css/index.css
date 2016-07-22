@@ -101,6 +101,8 @@ a:hover {
   border: solid #000 2px;
   border-radius: 5px;
   text-decoration: none;
+  margin: 5px;
+  white-space: nowrap;
 }
 
 .btn-blue:hover {
