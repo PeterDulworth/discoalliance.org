@@ -12,6 +12,7 @@
             this.$discoCanada = $('#disco-canada');
             this.$discoCalifornia = $('#disco-california');
             this.$discoGalveston = $('#disco-galveston');
+            this.$doc = $(document);
         },
         bindEvents: function () {
             this.$downArrowWrapper.on('click', {scrollTop: $( window ).height() + 1, duration: 500}, this.scrollToVal.bind(this));
@@ -19,6 +20,7 @@
             this.$discoCanada.on('click', {page: 'canada.html'}, this.redirect.bind(this));
             this.$discoCalifornia.on('click', {page: 'california.html'}, this.redirect.bind(this));
             this.$discoGalveston.on('click', {page: 'galveston.html'}, this.redirect.bind(this));
+            this.$doc.on('keydown', this.changePage.bind(this));
         },
         unbindEvents: function () {
 
@@ -36,25 +38,24 @@
         redirect: function (e) {
            window.location.href = e.data.page;
         },
+        changePage: function (e) {
+            switch(e.which) {
+
+                case 37: // left
+                console.log('left');
+                break;
+
+                case 39: // right
+                console.log('right');
+                break;
+
+                default: return; // exit this handler for other keys
+            }
+            e.preventDefault(); // prevent the default action (scroll / move caret)
+        }
     }
 
     app.init();
-
-    $(document).keydown(function(e) {
-        switch(e.which) {
-            case 37: // left
-            console.log('left');
-            break;
-
-            case 39: // right
-            console.log('right');
-            break;
-
-            default: return; // exit this handler for other keys
-        }
-
-        e.preventDefault(); // prevent the default action (scroll / move caret)
-    });
 
 })();
 
