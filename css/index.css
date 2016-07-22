@@ -5,7 +5,7 @@ body, html {
     font-family: Lato, "Lucida Console", Monaco, monospace;
 }
 
-video {
+.gif {
     position: absolute;
     top: 50%;
     left: 50%;
