@@ -8,21 +8,16 @@ body, html {
 }
 
 .gif {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-height: 95%;
-    max-width: 95%;
+    max-height: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     z-index: 1;
+    dispay:block;
 }
 
 .text {
-    position: relative;
-    z-index: 2;
     color: white;
-    display: inline-block;
-    vertical-align: middle;
     font-size: 15vw;
     opacity: 0.1;
 }
