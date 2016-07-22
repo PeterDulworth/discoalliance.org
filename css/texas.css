@@ -4,6 +4,8 @@ body, html {
     background-color: #000;
     font-family: Lato, "Lucida Console", Monaco, monospace;
     font-size: 16px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .landing-container {
