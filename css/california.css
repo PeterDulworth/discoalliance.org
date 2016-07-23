@@ -13,16 +13,18 @@ body, html {
     position:absolute;
     text-align: center;
     width: 100vw; height: 100vh;
+    line-height: 100vh;
     color: white;
     z-index: 2;
 }
 
 .text {
     width: 60vw;
-    height: auto;
-    display: inline-block;
-    margin: 38vh 20vw;
+    margin: 0 20vw;
     z-index: 3;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
 }
 
 .team-number {
