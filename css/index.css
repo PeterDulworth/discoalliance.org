@@ -68,7 +68,7 @@ body, html {
     opacity: 0.5;
     width: 8vw;
     display: inline-block;
-    margin: 92vh 46vw 5vh 46vw;
+    margin: 85vh 46vw 12vh 46vw;
 }
 
 #down-arrow:hover {
@@ -168,4 +168,11 @@ lg: 1200px and up
   }
 }
 
-a { color: inherit; }
+a {
+  color: inherit;
+}
+
+#nav-texas, #nav-canada, #nav-california, #nav-galveston {
+  cursor: pointer;
+  cursor: hand;
+}

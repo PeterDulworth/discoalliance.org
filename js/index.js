@@ -6,7 +6,7 @@
             this.bindEvents();
         },
         cacheDom: function () {
-            this.$downArrowWrapper = $("#down-arrow-wrapper");
+            this.$downArrowWrapper = $("#down-arrow");
             this.$navTexas = $("#nav-texas");
             this.$navCanada = $("#nav-canada");
             this.$navCalifornia = $("#nav-california");
