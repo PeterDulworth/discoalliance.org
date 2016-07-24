@@ -166,6 +166,9 @@ lg: 1200px and up
   .btn-wrapper, .txt-wrapper {
     text-align: center;
   }
+  #down-arrow-wrapper {
+    display: none;
+  }
 }
 
 a {
