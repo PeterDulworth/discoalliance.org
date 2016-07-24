@@ -169,6 +169,9 @@ lg: 1200px and up
   #down-arrow-wrapper {
     display: none;
   }
+  #city-logo {
+    width:70vw !important;
+  }
 }
 
 a {
