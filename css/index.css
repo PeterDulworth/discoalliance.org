@@ -167,3 +167,5 @@ lg: 1200px and up
     text-align: center;
   }
 }
+
+a { color: inherit; }

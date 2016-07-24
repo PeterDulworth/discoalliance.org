@@ -7,6 +7,10 @@
         },
         cacheDom: function () {
             this.$downArrowWrapper = $("#down-arrow-wrapper");
+            this.$navTexas = $("#nav-texas");
+            this.$navCanada = $("#nav-canada");
+            this.$navCalifornia = $("#nav-california");
+            this.$navGalveston = $("#nav-galveston");
             this.$downArrow = $("#down-arrow");
             this.$discoTexas = $('#disco-texas');
             this.$discoCanada = $('#disco-canada');
@@ -16,6 +20,10 @@
         },
         bindEvents: function () {
             this.$downArrowWrapper.on('click', {scrollTop: $( window ).height() + 1, duration: 500}, this.scrollToVal.bind(this));
+            this.$navTexas.on('click', {scrollTop: $( window ).height() + 1, duration: 500}, this.scrollToVal.bind(this));
+            this.$navCanada.on('click', {scrollTop: $("#disco-canada").offset().top, duration: 500}, this.scrollToVal.bind(this));
+            this.$navCalifornia.on('click', {scrollTop: $("#disco-california").offset().top, duration: 500}, this.scrollToVal.bind(this));
+            this.$navGalveston.on('click', {scrollTop: $("#disco-galveston").offset().top, duration: 500}, this.scrollToVal.bind(this));
             this.$discoTexas.on('click', {page: 'texas.html'}, this.redirect.bind(this));
             this.$discoCanada.on('click', {page: 'canada.html'}, this.redirect.bind(this));
             this.$discoCalifornia.on('click', {page: 'california.html'}, this.redirect.bind(this));
