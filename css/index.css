@@ -122,3 +122,42 @@ a:hover {
   border: solid #eee 2px;
   text-decoration: none;
 }
+
+/*
+xs: below 768px
+sm: 768px and up
+md: 992px and up
+lg: 1200px and up
+*/
+
+@media (min-width: 992px) {
+  .promo-code {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+  }
+  .copyright {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn-blue, .btn-red, .btn-gold {
+    display: inline-block;
+    float: right;
+  }
+  .btn-wrapper {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-blue, .btn-red, .btn-gold, .txt-wrapper>h2 {
+    display: inline-block;
+  }
+  .btn-wrapper, .txt-wrapper {
+    text-align: center;
+  }
+}
