@@ -143,6 +143,12 @@ lg: 1200px and up
   }
 }
 
+@media (max-width: 992px) {
+  .copyright {
+    padding-top: 10px;
+  }
+}
+
 @media (min-width: 768px) {
   .btn-blue, .btn-red, .btn-gold {
     display: inline-block;
