@@ -68,5 +68,5 @@
 })();
 
 $('.promocode').on('click', function () {
-      window.open('http://neodize.com', '_self');
-    });
+    window.open('http://neodize.com', '_blank');
+});
