@@ -181,6 +181,12 @@ lg: 1200px and up
     margin-left: 10vw;
     margin-right: 10vw;
   }
+  .gif {
+    position: relative;
+    left: -30%;
+    max-height: 160%;
+    max-width: 160%;
+  }
 }
 
 a {
