@@ -176,6 +176,11 @@ lg: 1200px and up
   #city-logo {
     width:70vw !important;
   }
+  .logo {
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
 }
 
 a {
