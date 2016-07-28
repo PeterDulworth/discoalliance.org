@@ -31,10 +31,14 @@ body, html {
     font-size: 500%;
 }
 
-.team-members, .team-awards {
+.team-members, .team-awards, .team-robots {
     font-size: 130%;
     font-weight: bold;
     line-height: 175%;
+}
+
+.team-robots {
+    color: #2587ff;
 }
 
 #down-arrow-wrapper {
@@ -60,7 +64,7 @@ body, html {
     opacity: 0.5;
 }
 
-#down-arrow:hover {
+#down-arrow:hover, .team-robots:hover {
   cursor: pointer;
   cursor: hand;
 }
