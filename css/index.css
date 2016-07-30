@@ -5,6 +5,7 @@ orange: 255,130,4;
 alt-blue: #70abe7
 dark-blue: #2066b4
 orange: 255,130,4
+red: rgb(218,19,36);
 */
 
 body, html {
@@ -133,11 +134,30 @@ a:hover {
   color: #000;
   font-size: 20px;
   padding: 7px 15px;
-  border: solid #000 2px;
   border-radius: 5px;
   text-decoration: none;
   margin: 5px;
   white-space: nowrap;
+}
+
+.btn-blue {
+  color: rgb(112,171,231);
+  border: solid rgb(112,171,231) 2px;
+}
+
+.btn-red {
+  color: rgb(218,19,36);
+  border: solid rgb(218,19,36) 2px;
+}
+
+.btn-gold {
+  color: #D4AF37;
+  border: solid #D4AF37 2px;
+}
+
+.btn-orange {
+  color: rgb(255,130,4);
+  border: solid rgb(255,130,4) 2px;
 }
 
 .btn-blue:hover, .btn-red:hover, .btn-gold:hover, .btn-orange:hover {
