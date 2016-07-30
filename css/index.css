@@ -2,33 +2,18 @@
 gold: #D4AF37
 blue: #2587ff
 orange: 255,130,4;
-alt-blue: 112, 171, 231
+alt-blue: #70abe7
 dark-blue: #2066b4
 orange: 255,130,4
 */
 
 body, html {
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
-    overflow-x: hidden;
-    background-color: black;
-    font-family: Lato, "Lucida Console", Monaco, monospace;
-}
-
-.gif {
-    max-height: 100%;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 1;
-    dispay:block;
-}
-
-.text {
-    color: white;
-    font-size: 15vw;
-    opacity: 0.1;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: black;
+  font-family: Lato, "Lucida Console", Monaco, monospace;
 }
 
 .landing-container {
@@ -36,48 +21,76 @@ body, html {
   line-height: 100vh;
 }
 
-.content {
-    width: 100%;
-    height: auto;
-    background-color: #eee;
-
-}
-
-.blue {
-    /*color: rgb(35,45,200);*/
-    color: #2587ff;
-}
-
-.gold {
-    color: gold;
+.logo-wrapper {
+  position: absolute;
+  width: 100vw; height: 100vh;
+  z-index:2;
+  text-align: center;
+  line-height: 100vh;
 }
 
 .logo {
-    opacity: 0.9;
-    width: 40vw;
-    margin-left: 30vw;
-    margin-right: 30vw;
-    display: inline-block;
-    vertical-align: middle;
+  opacity: 0.9;
+  width: 40vw;
+  margin-left: 30vw;
+  margin-right: 30vw;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo-text-wrapper {
+  position: absolute;
+  width: 100vw; height: 100vh;
+  z-index:2;
+  text-align: center;
+  line-height: 100vh;
+}
+
+.logo-text {
+  color: white;
+  font-size: 15vw;
+  opacity: 0.1;
+}
+
+.spinning-gif {
+  max-height: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  dispay:block;
+}
+
+.nav {
+  position: absolute;
+  width: 100vw;
+  z-index:10;
+  bottom: 0;
+  line-height: 200%;
+  font-size: 150%;
+  color: white;
+}
+
+#nav-texas, #nav-canada, #nav-california, #nav-galveston {
+  cursor: pointer;
+  cursor: hand;
 }
 
 #down-arrow-wrapper {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    z-index:9;
-    text-align: center;
-    line-height: 100vh;
-    /*border: 1px solid red;*/
-    font-size: 2vw;
-    color: white;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index:9;
+  text-align: center;
+  line-height: 100vh;
+  font-size: 2vw;
+  color: white;
 }
 #down-arrow {
-    /*border: solid 1px blue;*/
-    opacity: 0.5;
-    width: 8vw;
-    display: inline-block;
-    margin: 85vh 46vw 12vh 46vw;
+  opacity: 0.5;
+  width: 8vw;
+  display: inline-block;
+  margin: 85vh 46vw 12vh 46vw;
 }
 
 #down-arrow:hover {
@@ -85,18 +98,34 @@ body, html {
   cursor: hand;
 }
 
-#disco-texas:hover, #disco-canada:hover, #disco-california:hover, #disco-galveston:hover {
-  cursor: pointer;
-  cursor: hand;
+/**************************************************************************************************************************************/
+
+.content {
+  width: 100%;
+  height: auto;
+  background-color: #eee;
+}
+
+.blue {
+  color: #2587ff;
+}
+
+.gold {
+  color: gold;
 }
 
 a {
-  color: rgb(51,51,51);
+  color: inherit;
 }
 
 a:hover {
-    color: black;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
+}
+
+#disco-texas:hover, #disco-canada:hover, #disco-california:hover, #disco-galveston:hover {
+  cursor: pointer;
+  cursor: hand;
 }
 
 .btn-blue, .btn-red, .btn-gold, .btn-orange {
@@ -111,55 +140,36 @@ a:hover {
   white-space: nowrap;
 }
 
-.btn-blue:hover {
+.btn-blue:hover, .btn-red:hover, .btn-gold:hover, .btn-orange:hover {
   /* offset-x | offset-y | blur-radius | spread-radius | color */
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  background: #2587ff;
   color:white;
   border: solid #eee 2px;
   text-decoration: none;
+}
+
+.btn-blue:hover {
+  background: #2587ff;
 }
 
 .btn-red:hover {
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   background: rgb(218,19,36);
-  color:white;
-  border: solid #eee 2px;
-  text-decoration: none;
 }
 
 .btn-gold:hover {
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   background: gold;
-  color:white;
-  border: solid #eee 2px;
-  text-decoration: none;
 }
 
 .btn-orange:hover {
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   background: rgb(255,130,4);
-  color:white;
-  border: solid #eee 2px;
-  text-decoration: none;
 }
 
-.nav {
-  position: absolute;
-  width: 100vw;
-  z-index:10;
-  bottom: 0;
-  line-height: 200%;
-  font-size: 150%;
-  color: white;
-}
-
-/*
+/*********************************************************************************************************************************************************
 xs: below 768px
 sm: 768px and up
 md: 992px and up
 lg: 1200px and up
-*/
+*********************************************************************************************************************************************************/
 
 @media (min-width: 992px) {
   .promo-code {
@@ -208,7 +218,7 @@ lg: 1200px and up
     margin-left: 10vw;
     margin-right: 10vw;
   }
-  .gif {
+  .spinning-gif {
     position: relative;
     left: -30%;
     max-height: 160%;
@@ -217,13 +227,4 @@ lg: 1200px and up
   .nav {
     line-height: 175%;
   }
-}
-
-a {
-  color: inherit;
-}
-
-#nav-texas, #nav-canada, #nav-california, #nav-galveston {
-  cursor: pointer;
-  cursor: hand;
 }
