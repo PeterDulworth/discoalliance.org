@@ -1,11 +1,11 @@
 /*
+light blue: #70ABE7
 gold: #D4AF37
-blue: #2587ff
-orange: 255,130,4;
-alt-blue: #70abe7
-dark-blue: #2066b4
-orange: 255,130,4
-red: rgb(218,19,36);
+orange: #FF8204
+red: #DA1324
+-------------------
+med-blue: #2587FF
+dark-blue: #2066B4
 */
 
 body, html {
@@ -169,7 +169,7 @@ a:hover {
 }
 
 .btn-blue:hover {
-  background: #2587ff;
+  background: #70abe7;
 }
 
 .btn-red:hover {
@@ -177,7 +177,7 @@ a:hover {
 }
 
 .btn-gold:hover {
-  background: gold;
+  background: #D4AF37;
 }
 
 .btn-orange:hover {
