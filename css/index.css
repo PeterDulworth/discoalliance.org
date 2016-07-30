@@ -1,3 +1,9 @@
+/*
+gold: #D4AF37
+blue: #2587ff
+orange: 255,130,4;
+*/
+
 body, html {
     margin: 0;
     padding: 0;
@@ -90,7 +96,7 @@ a:hover {
     text-decoration: none;
 }
 
-.btn-blue, .btn-red, .btn-gold {
+.btn-blue, .btn-red, .btn-gold, .btn-orange {
   font-family: Arial;
   color: #000;
   font-size: 20px;
@@ -122,6 +128,14 @@ a:hover {
 .btn-gold:hover {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   background: gold;
+  color:white;
+  border: solid #eee 2px;
+  text-decoration: none;
+}
+
+.btn-orange:hover {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background: rgb(255,130,4);
   color:white;
   border: solid #eee 2px;
   text-decoration: none;
@@ -164,7 +178,7 @@ lg: 1200px and up
 }
 
 @media (min-width: 768px) {
-  .btn-blue, .btn-red, .btn-gold {
+  .btn-blue, .btn-red, .btn-gold, .btn-orange {
     display: inline-block;
     float: right;
   }
@@ -174,7 +188,7 @@ lg: 1200px and up
 }
 
 @media (max-width: 768px) {
-  .btn-blue, .btn-red, .btn-gold, .txt-wrapper>h2 {
+  .btn-blue, .btn-red, .btn-gold, .btn-orange, .txt-wrapper>h2 {
     display: inline-block;
   }
   .btn-wrapper, .txt-wrapper {
