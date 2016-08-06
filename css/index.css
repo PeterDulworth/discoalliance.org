@@ -1,7 +1,7 @@
 /*
 light blue: #70ABE7
 gold: #D4AF37
-orange: #FF8204
+blue-alt: #FF8204
 red: #DA1324
 -------------------
 med-blue: #2587FF
@@ -129,7 +129,7 @@ a:hover {
   cursor: hand;
 }
 
-.btn-blue, .btn-red, .btn-gold, .btn-orange {
+.btn-blue, .btn-red, .btn-gold, .btn-blue-alt {
   font-family: Arial;
   color: #000;
   font-size: 20px;
@@ -155,12 +155,12 @@ a:hover {
   border: solid #D4AF37 2px;
 }
 
-.btn-orange {
-  color: rgb(255,130,4);
-  border: solid rgb(255,130,4) 2px;
+.btn-blue-alt {
+  color: rgb(37,135,255);
+  border: solid rgb(37,135,255) 2px;
 }
 
-.btn-blue:hover, .btn-red:hover, .btn-gold:hover, .btn-orange:hover {
+.btn-blue:hover, .btn-red:hover, .btn-gold:hover, .btn-blue-alt:hover {
   /* offset-x | offset-y | blur-radius | spread-radius | color */
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   color:white;
@@ -180,8 +180,8 @@ a:hover {
   background: #D4AF37;
 }
 
-.btn-orange:hover {
-  background: rgb(255,130,4);
+.btn-blue-alt:hover {
+  background: rgb(37,135,255);
 }
 
 /*********************************************************************************************************************************************************
@@ -211,7 +211,7 @@ lg: 1200px and up
 }
 
 @media (min-width: 768px) {
-  .btn-blue, .btn-red, .btn-gold, .btn-orange {
+  .btn-blue, .btn-red, .btn-gold, .btn-blue-alt {
     display: inline-block;
     float: right;
   }
@@ -221,7 +221,7 @@ lg: 1200px and up
 }
 
 @media (max-width: 768px) {
-  .btn-blue, .btn-red, .btn-gold, .btn-orange, .txt-wrapper>h2 {
+  .btn-blue, .btn-red, .btn-gold, .btn-blue-alt, .txt-wrapper>h2 {
     display: inline-block;
   }
   .btn-wrapper, .txt-wrapper {
