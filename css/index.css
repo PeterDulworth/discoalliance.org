@@ -162,7 +162,7 @@ a:hover {
 
 .btn-blue:hover, .btn-red:hover, .btn-gold:hover, .btn-blue-alt:hover {
   /* offset-x | offset-y | blur-radius | spread-radius | color */
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
   color:white;
   border: solid #eee 2px;
   text-decoration: none;
