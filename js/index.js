@@ -11,11 +11,13 @@
             this.$navCanada = $("#nav-canada");
             this.$navCalifornia = $("#nav-california");
             this.$navGalveston = $("#nav-galveston");
+            this.$navCrossfire = $("#nav-crossfire");
             this.$downArrow = $("#down-arrow");
             this.$discoTexas = $('#disco-texas');
             this.$discoCanada = $('#disco-canada');
             this.$discoCalifornia = $('#disco-california');
             this.$discoGalveston = $('#disco-galveston');
+            this.$discoCrossfire = $('#disco-crossfire');
             this.$doc = $(document);
         },
         bindEvents: function () {
@@ -24,10 +26,12 @@
             this.$navCanada.on('click', {scrollTop: $("#disco-canada").offset().top, duration: 500}, this.scrollToVal.bind(this));
             this.$navCalifornia.on('click', {scrollTop: $("#disco-california").offset().top, duration: 500}, this.scrollToVal.bind(this));
             this.$navGalveston.on('click', {scrollTop: $("#disco-galveston").offset().top, duration: 500}, this.scrollToVal.bind(this));
+            this.$navCrossfire.on('click', {scrollTop: $("#disco-crossfire").offset().top, duration: 500}, this.scrollToVal.bind(this));
             this.$discoTexas.on('click', {page: 'texas.html'}, this.redirect.bind(this));
             this.$discoCanada.on('click', {page: 'canada.html'}, this.redirect.bind(this));
             this.$discoCalifornia.on('click', {page: 'california.html'}, this.redirect.bind(this));
             this.$discoGalveston.on('click', {page: 'galveston.html'}, this.redirect.bind(this));
+            this.$discoCrossfire.on('click', {page: 'crossfire.html'}, this.redirect.bind(this));
             this.$doc.on('keydown', this.changePage.bind(this));
         },
         unbindEvents: function () {
