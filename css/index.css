@@ -72,7 +72,7 @@ body, html {
   color: white;
 }
 
-#nav-texas, #nav-canada, #nav-california, #nav-galveston {
+#nav-texas, #nav-canada, #nav-california, #nav-galveston, #nav-crossfire {
   cursor: pointer;
   cursor: hand;
 }
@@ -124,7 +124,7 @@ a:hover {
   text-decoration: none;
 }
 
-#disco-texas:hover, #disco-canada:hover, #disco-california:hover, #disco-galveston:hover {
+#disco-texas:hover, #disco-canada:hover, #disco-california:hover, #disco-galveston:hover, #disco-crossfire:hover {
   cursor: pointer;
   cursor: hand;
 }
