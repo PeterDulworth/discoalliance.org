@@ -40,6 +40,14 @@ body, html {
 .team-robots {
     color: #2587ff;
     border: 2px solid #2587ff;
+    border-radius: 10px;
+    display:inline;
+    padding: 2px 10px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.team-robots:hover {
+    background-color: rgba(0,0,0,0.7);
 }
 
 #down-arrow-wrapper {
